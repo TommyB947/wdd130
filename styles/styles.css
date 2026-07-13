@@ -1,14 +1,22 @@
+:root {
+    --border-color: #000;
+    --border-width: 1px;
+    --main-background-color: #eee;
+    --shadows: #333;
+    --main-spacing: 1rem;
+}
+
 main {
     max-width: 800px;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    margin: var(--main-spacing);
+    border: var(--border-width) solid var(--border-color);
+    padding: var(--main-spacing);
+    background-color: var(--main-background-color);
+    color: var(--shadows);
     text-align: center;
 }
 
@@ -23,7 +31,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--main-background-color);
     display: block;
     padding: 20px;
 }
@@ -35,9 +43,9 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border-width) solid var(--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--shadows);
 }
 
 p {
@@ -46,6 +54,6 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--border-width) solid var(--border-color);
     text-align: center;
 }
