@@ -1,8 +1,6 @@
 :root {
-    --primary-color: #b3e8ff;
-    --secondary-color: #ffe3b3;
-    --accent1-color: #479aff;
-    --accent2-color: #ffc547;
+    --accent1-color: #5159fc;
+    --primary-color: #ffb95e;
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, sans-serif;
 }
@@ -78,7 +76,11 @@ h1 {
     width: 75px;
 }
 
+footer {
+    text-align: center;
+}
+
 footer nav img {
-    width: 100px;
+    width: 50px;
     height: auto;
 }
