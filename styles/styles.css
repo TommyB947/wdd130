@@ -22,6 +22,11 @@ main {
 }
 
 aside {
+    margin: var(--main-spacing);
+    border: var(--border-width);
+    padding: var(--main-spacing);
+    background-color: var(--main-background-color);
+    color: var(--border-color);
     width: 20rem;
     text-align: center;
     position: relative;
