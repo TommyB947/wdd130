@@ -1,6 +1,6 @@
 :root {
     --accent1-color: #5159fc;
-    --primary-color: #ffb95e;
+    --primary-color: #a80e00;
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, sans-serif;
 }
@@ -111,7 +111,6 @@ footer nav img {
 .parent1 {
     display: flex;
     justify-content: space-between;
-    align-content: left;
     min-width: 25rem;
 }
 
