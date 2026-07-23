@@ -34,7 +34,7 @@ p,
 section,
 article {
     margin: 1rem;
-    padding: 0.5rem;
+    padding: 0.1rem;
 }
 
 .socialmedia a {
@@ -99,15 +99,50 @@ footer nav img {
     justify-items: center;
 }
 
-.parent {
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    justify-items: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.parent1 {
     display: flex;
     justify-content: space-between;
     align-content: left;
     min-width: 25rem;
 }
 
+.parent2 {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
 .child {
     grid-column-start: 1;
     grid-column-end: 4;
     align-content: center;
+}
+
+.child2 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    align-content: center;
+}
+
+section img {
+    width: auto;
+    height: 150px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figure img {
+    max-width: 168px;
+    object-fit: cover;
 }
