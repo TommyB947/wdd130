@@ -1,6 +1,7 @@
 :root {
     --accent1-color: #0a0099;
     --primary-color: #a80e00;
+    --border-color: #000000;
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, sans-serif;
     --text-color: #fff;
@@ -20,7 +21,8 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    min-width: 300px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
@@ -30,12 +32,71 @@ h2 {
     color: var(--primary-color);
 }
 
+h1 {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+div h1 {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+}
+
 nav,
 p,
 section,
 article {
     margin: 1rem;
     padding: 0.1rem;
+}
+
+form section {
+    margin: 0.5rem;
+    align-content: center;
+}
+
+footer {
+    text-align: center;
+}
+
+footer nav img {
+    width: 50px;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figure img {
+    overflow: hidden;
+    width: 90px;
+    object-fit: cover;
+}
+
+iframe {
+    width: 450px;
+    height: 450px;
+    margin: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+form {
+    margin: 1rem;
+    padding: 10px;
 }
 
 .socialmedia a {
@@ -52,17 +113,6 @@ article {
     height: auto;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 1rem;
-    text-align: center;
-    opacity: 0.8;
-    background-color: var(--accent1-color);
-    color: var(--text-color);
-}
-
 .hero article {
     position: absolute;
     bottom: 10px;
@@ -74,16 +124,19 @@ h1 {
 
 .hero article img {
     float: right;
+    padding: 5px;
     width: 75px;
 }
 
-footer {
+.address {
     text-align: center;
+    padding: 2px;
+    margin: 0;
 }
 
-footer nav img {
-    width: 50px;
-    height: auto;
+.form-item {
+    padding: 0;
+    margin: 0;
 }
 
 .grid1 {
@@ -106,7 +159,33 @@ footer nav img {
     grid-template-rows: 1fr 2fr;
     justify-items: center;
     gap: 20px;
-    align-items: center;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    justify-items: center;
+
+    gap: 20px;
+}
+
+.grid5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.grid6 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 30px 200px 80px 30px;
+}
+
+.grid7 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 20px, 20px, 20px;
 }
 
 .parent1 {
@@ -153,17 +232,20 @@ footer nav img {
     align-content: center;
 }
 
-
-figcaption {
-    text-align: center;
+.child6 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-content: center;
 }
 
-figure img {
-    overflow: hidden;
-    width: 100px;
-    object-fit: cover;
+.child7 img {
+    width: 200px;
 }
 
-
-
-
+.child9 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    align-content: center;
+}
