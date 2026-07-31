@@ -185,7 +185,7 @@ form {
 .grid7 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 20px, 20px, 20px;
+    grid-template-rows: 20px 20px 20px;
 }
 
 .parent1 {
