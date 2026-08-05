@@ -45,7 +45,7 @@ h2 {
     text-align: center;
 }
 
-h3 a {
+p a {
     text-decoration: none;
     color: var(--accent1-color);
     font-size: 30px;
