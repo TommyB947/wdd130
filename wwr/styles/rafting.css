@@ -106,6 +106,26 @@ form {
     padding: 10px;
 }
 
+table {
+    border-collapse: collapse;
+    border: 1px solid rbg(140 140 140);
+    letter-spacing: 1px;
+    margin: 0 auto;
+    background-color: var(--grid-color);
+}
+
+th,
+td {
+    border: 1px solid rgb(150 150 150);
+    padding: 8px 12px;
+    text-align: center;
+}
+
+thead th,
+tfoot tr {
+    font-weight: 700;
+}
+
 .hero {
     position: relative;
 }
@@ -212,6 +232,15 @@ form {
     border: 3px solid var(--border-color);
 }
 
+.grid10 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background-color: var(--grid-color);
+    border-radius: 20px;
+    border: 2px solid var(--border-color);
+}
+
 .parent1 {
     display: flex;
     justify-content: space-between;
@@ -315,4 +344,27 @@ form {
 
 .child17 {
     margin: 5px;
+}
+
+.child18 {
+    margin: 15px;
+    border-radius: 30px;
+    border: 1px solid var(--border-color);
+}
+
+.child19 {
+    margin: 15px;
+    border-radius: 30px;
+    border: 1px solid var(--border-color);
+}
+
+.child20 {
+    margin: 15px;
+    border-radius: 30px;
+    border: 1px solid var(--border-color);
+}
+
+.child21 {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
