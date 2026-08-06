@@ -108,7 +108,7 @@ form {
 
 table {
     border-collapse: collapse;
-    border: 1px solid rbg(140 140 140);
+    border: 1px solid rbg(--border-color);
     letter-spacing: 1px;
     margin: 0 auto;
     background-color: var(--grid-color);
@@ -116,7 +116,7 @@ table {
 
 th,
 td {
-    border: 1px solid rgb(150 150 150);
+    border: 1px solid var(--border-color);
     padding: 8px 12px;
     text-align: center;
 }
